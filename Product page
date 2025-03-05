@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish E-commerce Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #517ec1, #171a1f);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .product-container {
+            background: rgb(222, 122, 122);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            width: 300px;
+        }
+
+        .product-container:hover {
+            transform: scale(1.03);
+        }
+
+        .product-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff5733;
+            margin: 10px 0;
+        }
+
+        .add-to-cart {
+            background: #ff5733;
+            color: rgb(228, 132, 132);
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 25px;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .add-to-cart:hover {
+            background: #e64a19;
+            transform: scale(1.05);
+        }
+
+        .reviews {
+            margin-top: 20px;
+            background: rgb(213, 114, 114);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 20px auto;
+        }
+
+        .review-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin: 5px 0;
+        }
+
+        .star { color: gold; font-size: 20px; }
+    </style>
+</head>
+<body>
+    <div class="product-container"></div>
+        <div class="product-image">
+            <img src="C:\Users\vsuji\OneDrive\Pictures\Lenovo Laptop.jpg" alt="Product Image">
+        </div>
+        <h1>Stylish Product</h1>
+        <p class="price">$49.99</p>
+        <button class="add-to-cart">🛒 Add to Cart</button>
+    </div>
+
+    <div class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-item">
+            <span class="star">⭐⭐⭐⭐⭐</span> <p>"Amazing quality!" - Alice</p>
+        </div>
+        <div class="review-item">
+            <span class="star">⭐⭐⭐⭐☆</span> <p>"Looks great, fast shipping." - Bob</p>
+        </div>
+    </div>
+</body>
+</html>
